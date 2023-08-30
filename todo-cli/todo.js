@@ -27,7 +27,7 @@ const todoList = () => {
       // Write the date check condition here and return the array
       // of todo items that are due later accordingly.
       var later= [];
-       later = all.filter((Array) => Array.dueDate === new Date().toLocaleDateString("en-CA"));
+       later = all.filter((Array) => Array.dueDate > new Date().toLocaleDateString("en-CA"));
      return later;
     }
   
